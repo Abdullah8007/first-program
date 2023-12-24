@@ -47,11 +47,15 @@ const NavMenu = styled.div`
 
     span {
       font-weight: 500;
-      color: midnightblue;
+      color: #14213D;
       letter-spacing: .5px;
       text-decoration: none;
       cursor: pointer;
       font-size: 20px;
+    }
+    span:hover {
+      color: #E5E5E5;
+      transition: all 5s ease in;
     }
   }
 
