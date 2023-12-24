@@ -30,6 +30,7 @@ const Nav = styled.div`
  display: flex;
  align-items: center;
  justify-content: space-around;
+ flex-wrap: wrap;
 `;
 
 const Logo = styled.img`
