@@ -6,18 +6,17 @@ function Header() {
  return (
     <Nav>
       <Logo src="/Images/logo.png" />
-      
       <NavMenu>
-        <a href='./Home.js'>
+        <a>
           <span>Home</span>
         </a>
-        <a href=''>
+        <a>
           <span>About</span>
         </a>
-        <a href=''>
+        <a>
           <span>Portfolio</span>
         </a>
-        <a href=''>
+        <a>
           <span>Contact</span>
         </a>
       </NavMenu>
@@ -31,12 +30,11 @@ const Nav = styled.div`
  display: flex;
  align-items: center;
  justify-content: space-around;
- font-size: 20px;
 `;
 
 const Logo = styled.img`
-  width: 10%;
-  height: auto;
+  width: auto;
+  height: 20%;
   padding: 0 35px
 `;
 
@@ -48,10 +46,21 @@ const NavMenu = styled.div`
 
     span {
       font-weight: 500;
-      color: 14213d;
-      letter-spacing: .5px
+      color: midnightblue;
+      letter-spacing: .5px;
       text-decoration: none;
+      cursor: pointer;
+      font-size: 20px;
+    }
+  }
 
+  @media (max-width: 1024px) {
+    a{
+      padding: 0 6px;
+
+      span{
+        font-size: 18px;
+      }
     }
   }
 `;
