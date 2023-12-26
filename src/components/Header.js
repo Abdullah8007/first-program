@@ -31,21 +31,23 @@ function Header() {
 };
 
 const Nav = styled.div`
-  height: 70px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 160px;
+  padding: 0 100px;
   padding-top: 10px
 `;
 
 const Logo = styled.img`
   height: 50px;
+  cursor: pointer;
 `;
 
 const NavMenu = styled.div`
   display: flex;
+  align-items: center;
 
   a {
     padding: 0 20px;
@@ -55,21 +57,22 @@ const NavMenu = styled.div`
       background-color: #15E6CD;
       border: 2px solid #15E6CD;
       color: #fff;
-      transition: .5s
+      transition: .3s
     }
 
     span {
       font-weight: 500;
       color: #2F97C1;
-      letter-spacing: .5px;
+      letter-spacing: .3px;
       text-decoration: none;
       cursor: pointer;
-      font-size: 16px;
+      font-size: 18px;
       text-transform: uppercase;
+      // text-shadow: 5px 5px 10px rgba(47, 151, 193, 0.43);
     }
 
     span:hover {
-      transition: 0.5s;
+      transition: 0.3s;
       color: #15E6CD;
     }
   }
@@ -87,11 +90,11 @@ const Button = styled.button`
   background-color: transparent;
   border: 2px solid #2F97C1;
   border-radius: 5px;
-  transform: translateY(-11px);
-  font-size: 16px;
+  font-size: 18px;
   text-transform: uppercase;
   font-weight: 500;
-  
+  box-shadow: 5px 5px 10px rgba(21, 230, 205, 0.26);
+  font-family: 'Courier New', Courier, monospace;
 `;
 
 export default Header;
