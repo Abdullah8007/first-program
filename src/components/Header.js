@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 function Header() {
- return (
+  return (
     <Nav>
       <Logo src="/Images/logo.png" />
       <NavMenu>
@@ -21,12 +21,11 @@ function Header() {
         </a>
       </NavMenu>
     </Nav>
- );
+  );
 };
 
 const Nav = styled.div`
  height: 70px;
- background: #FCA311;
  display: flex;
  align-items: center;
  justify-content: space-around;
@@ -35,7 +34,7 @@ const Nav = styled.div`
 
 const Logo = styled.img`
   width: auto;
-  height: 20%;
+  height: 28%;
   padding: 0 35px
 `;
 
@@ -44,28 +43,26 @@ const NavMenu = styled.div`
 
   a {
     padding: 0 10px;
+    display: inline;
 
     span {
       font-weight: 500;
-      color: #14213D;
+      color: #2F97C1;
       letter-spacing: .5px;
       text-decoration: none;
       cursor: pointer;
-      font-size: 20px;
+      font-size: 18px;
     }
+
     span:hover {
-      color: #E5E5E5;
-      transition: all 5s ease in;
+      transition: 0.5s;
+      color: #15E6CD;
     }
   }
 
   @media (max-width: 1024px) {
     a{
       padding: 0 6px;
-
-      span{
-        font-size: 18px;
-      }
     }
   }
 `;
