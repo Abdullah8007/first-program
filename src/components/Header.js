@@ -36,8 +36,7 @@ const Nav = styled.div`
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 100px;
-  padding-top: 10px
+  padding: 5px 100px;
 `;
 
 const Logo = styled.img`
