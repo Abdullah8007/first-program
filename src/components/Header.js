@@ -7,19 +7,19 @@ function Header() {
     <Nav>
       <Logo src="/Images/logo.png" />
       <NavMenu>
-        <a>
+        <a href=''>
           <span>Home</span>
         </a>
-        <a>
+        <a href=''>
           <span>About</span>
         </a>
-        <a>
+        <a href=''>
           <span>Skills</span>
         </a>
-        <a>
+        <a href=''>
           <span>Projects</span>
         </a>
-        <a>
+        <a href=''>
           <span>Contact</span>
         </a>
         <a>
@@ -37,22 +37,23 @@ const Nav = styled.div`
   justify-content: space-between;
   width: 100%;
   position: fixed;
-  background-color: #e8f7ff;
+  background-color: #ECF0F3;
   box-shadow: 0 10px 10px #c9c9c9;
 `;
 
 const Logo = styled.img`
   height: 50px;
   cursor: pointer;
-  padding-left: 100px;
+  padding-left: 75px;
 `;
 
 const NavMenu = styled.div`
-  padding-right: 100px;  
+  padding-right: 60px;  
 
   a {
     padding: 0 20px;
     display: inline;
+    text-decoration: none;
 
     Button:hover {
       background-color: #15E6CD;
@@ -66,15 +67,15 @@ const NavMenu = styled.div`
       color: #2F97C1;
       letter-spacing: .3px;
       text-decoration: none;
-      cursor: pointer;
+      // cursor: pointer;
       font-size: 18px;
       text-transform: uppercase;
-      // text-shadow: 5px 5px 10px rgba(47, 151, 193, 0.43);
     }
 
     span:hover {
       transition: 0.3s;
-      color: #15E6CD;
+      // color: #15E6CD;
+      text-shadow: 7px 5px 1px #15E6CD;
     }
   }
 
@@ -86,7 +87,7 @@ const NavMenu = styled.div`
 `;
 
 const Button = styled.button`
-  padding: 12px 20px;
+  padding: 11px 18px;
   color: #2F97C1;
   background-color: transparent;
   border: 2px solid #2F97C1;
@@ -94,6 +95,7 @@ const Button = styled.button`
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 500;
+  cursor: pointer;
   box-shadow: 5px 5px 10px rgba(21, 230, 205, 0.26);
   font-family: 'Courier New', Courier, monospace;
 `;
