@@ -31,22 +31,24 @@ function Header() {
 };
 
 const Nav = styled.div`
-  height: 60px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 5px 100px;
+  width: 100%;
+  position: fixed;
+  background-color: #e8f7ff;
+  box-shadow: 0 10px 10px #c9c9c9;
 `;
 
 const Logo = styled.img`
   height: 50px;
   cursor: pointer;
+  padding-left: 100px;
 `;
 
 const NavMenu = styled.div`
-  display: flex;
-  align-items: center;
+  padding-right: 100px;  
 
   a {
     padding: 0 20px;

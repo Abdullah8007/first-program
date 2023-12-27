@@ -9,8 +9,9 @@ function Home() {
     <Container>
       <p>Let's Build Something Together</p>
       <Hero>
-        <h1>Hi, i'm <span data-text="Abdullah">Abdullah</span><br></br>A Front-End Developer.</h1>
-        <p>I’m focused on building responsive front-end web applications while learning back-end technologies.</p>
+        <h1>Hi, i'm Abdullah<br></br>A <span>Front-End Developer.</span></h1>
+
+        <Para>I’m focused on building responsive front-end web applications while learning back-end technologies.</Para>
         <a>
           <Button type='button'><LinkedIn /></Button>
         </a>
@@ -33,13 +34,14 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 92vh;
-  background-color: #f5f5f5;
+  height: 100vh;
+  background-color: #e8f7ff;
   
   p {
     font-size: 18px;
     text-transform: uppercase;
     margin-bottom: 5px;
+    letter-spacing: 1px;
   }
 `;
 
@@ -50,20 +52,45 @@ const Hero = styled.div`
     margin-bottom: 5px;
     text-transform: uppercase;
     font-weight: bolder;
+    color: #434343;
+    letter-spacing: 1px;
     
 
     span {
       color: transparent;
-      -webkit-text-stroke: 1px #2F97C1;
-      
+      background-image: linear-gradient(#2F97C1, #2F97C1);
+      background-repeat: no-repeat;
+      -webkit-background-clip: text;
+      background-position: -650px 0;
+      animation: backcolor 4s linear infinite alternate;
+
+      @keyframes backcolor {
+        100% {
+          background-position: 0 0;
+        }
       }
     }
-
   }
 `;
 
+const Para = styled.div`
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  line-height: 23px;
+  font-size: 18px;
+  text-transform: uppercase;
+`;
 const Button = styled.button`
-
+  padding: 18px 20px;
+  margin: 0 10px;
+  border: 0px solid #fff;
+  border-radius: 50%;
+  background-color: transparent;
+  box-shadow: 0 10px 10px #c9c9c9;
+  margin-top: 10px;
+  cursor: pointer;
 `;
 
 export default Home;
