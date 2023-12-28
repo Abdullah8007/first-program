@@ -57,15 +57,15 @@ const NavMenu = styled.div`
     text-decoration: none;
 
     Button:hover {
-      background-color: #1CCAD8;
-      border: 2px solid #1CCAD8;
+      background-color: #6A994E;
+      border: 2px solid #6A994E;
       color: #ECF0F3;
       transition: .3s
     }
 
     span {
       // font-weight: 600;
-      color: #2F97C1;
+      color: #434343;
       letter-spacing: .3px;
       text-decoration: none;
       // cursor: pointer;
@@ -75,7 +75,7 @@ const NavMenu = styled.div`
 
     span:hover {
       transition: 0.3s;
-      color: #1CCAD8;
+      color: #6A994E;
     }
   }
 
@@ -88,9 +88,9 @@ const NavMenu = styled.div`
 
 const Button = styled.button`
   padding: 11px 18px;
-  color: #2F97C1;
+  color: #6A994E;
   background-color: transparent;
-  border: 2px solid #2F97C1;
+  border: 2px solid #6A994E;
   border-radius: 5px;
   font-size: 18px;
   text-transform: uppercase;

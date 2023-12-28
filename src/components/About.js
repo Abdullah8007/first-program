@@ -36,7 +36,7 @@ const Container = styled.div`
     column-gap: 200px;
 
     .img:hover {
-      transform: scale(1.1, 1.1);
+      transform: scale(1.05, 1.05);
   }
 `;
 
@@ -45,7 +45,7 @@ const AboutMe = styled.div``;
 const Title = styled.div`
   font-size: 20px;
   text-transform: uppercase;
-  color: #2F97C1;
+  color: #6A994E;
   letter-spacing: 1px;
 `;
 
