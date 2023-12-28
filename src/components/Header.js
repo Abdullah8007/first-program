@@ -5,7 +5,7 @@ import styled from 'styled-components';
 function Header() {
   return (
     <Nav>
-      <Logo src="/Images/logo.png" />
+      <a><Logo src="/Images/logo.png" /></a>
       <NavMenu>
         <a href=''>
           <span>Home</span>
@@ -22,7 +22,7 @@ function Header() {
         <a href=''>
           <span>Contact</span>
         </a>
-        <a>
+        <a href='/Resume.pdf' target='_blank' rel='noreferrer'>
         <Button type='button'>Resume</Button>
         </a>
       </NavMenu>
@@ -39,6 +39,7 @@ const Nav = styled.div`
   position: fixed;
   background-color: #ECF0F3;
   box-shadow: 0 10px 10px #c9c9c9;
+  z-index: 1;
 `;
 
 const Logo = styled.img`
@@ -63,7 +64,7 @@ const NavMenu = styled.div`
     }
 
     span {
-      font-weight: 500;
+      // font-weight: 600;
       color: #2F97C1;
       letter-spacing: .3px;
       text-decoration: none;
