@@ -67,7 +67,7 @@ const Hero = styled.div`
       background-image: linear-gradient(#2F97C1, #2F97C1);
       background-repeat: no-repeat;
       -webkit-background-clip: text;
-      background-position: -750px 0;
+      background-position: -775px 0;
       animation: backcolor 4s linear infinite alternate;
 
       @keyframes backcolor {

@@ -56,9 +56,9 @@ const NavMenu = styled.div`
     text-decoration: none;
 
     Button:hover {
-      background-color: #15E6CD;
-      border: 2px solid #15E6CD;
-      color: #fff;
+      background-color: #1CCAD8;
+      border: 2px solid #1CCAD8;
+      color: #ECF0F3;
       transition: .3s
     }
 
@@ -74,8 +74,7 @@ const NavMenu = styled.div`
 
     span:hover {
       transition: 0.3s;
-      // color: #15E6CD;
-      text-shadow: 7px 5px 1px #15E6CD;
+      color: #1CCAD8;
     }
   }
 
