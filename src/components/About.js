@@ -6,11 +6,11 @@ import 'bootstrap/dist/css/bootstrap.css';
 function About() {
   return (
     // <Container className='container-fluid'>
-      <Container className='container-fluid ms-auto m-auto justify-content-evenly row flex-md-nowrap row-gap-lg-5 row-gap-md-4 p-5'>
-        <Image className='img col-lg-4 col-md-2 col-sm-12' src='/Images/about-img.png' alt='About-Img' />
+      <Container className='container-fluid ms-auto m-auto justify-content-evenly row flex-md-nowrap p-5 p-md-4'>
+        <Image className='img col-lg-4 col-md-2 p-md-4 col-sm-10' src='/Images/about-img.png' alt='About-Img' />
         <AboutMe className='col-lg-8 col-md-10 col-sm-12'>
           <Title>About</Title>
-          <Head className=' mb-5'>Who I Am</Head>
+          <Head className=' mb-5 mb-sm-1'>Who I Am</Head>
           <Para>Hi there!, I’m Abdullah, a curious frontend developer who’s trying to get a bit better every day.
             <br></br><br></br>
             I currently studying in S.Y.BCA from Tilak Maharashtra Vidyapeeth, Pune.
@@ -38,6 +38,10 @@ const Container = styled.div`
 
     .img:hover {
       transform: scale(1.05, 1.05);
+  }
+
+  @media (max-width: 1024px) {
+    padding: 0 200px
   }
 `;
 

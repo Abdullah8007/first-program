@@ -50,6 +50,7 @@ const Container = styled.div`
     padding: 0 100px;
     flex-direction: column;
     text-align; left;
+    position: relative;
 `;
 
 const Title = styled.div`
