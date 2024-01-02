@@ -2,11 +2,12 @@
 /* eslint-disable react/jsx-no-undef */
 import React from 'react'
 import styled from 'styled-components';
-import { GitHub, LinkedIn, MailOutlineRounded, RecentActorsRounded } from '@mui/icons-material'
+import { GitHub, LinkedIn, MailOutlineRounded, RecentActorsRounded } from '@mui/icons-material';
+import 'bootstrap/dist/css/bootstrap.css';
 
 function Home() {
   return (
-    <Container>
+    <Container className=' container-fluid'>
       <p>Let's Build Something Together</p>
       <Hero>
         <h1>Hi, i'm Abdullah<br></br>A <span>Front-End Web Developer.</span></h1>
@@ -60,6 +61,7 @@ const Hero = styled.div`
     font-weight: bolder;
     color: #434343;
     letter-spacing: 1px;
+    font-weight: 700;
     
 
     span {
