@@ -31,17 +31,22 @@ function Home() {
 
 const Container = styled.div`
   text-align: center;
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
   flex-direction: column;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: #ECF0F3;
+  padding: 350px 0;
   
   p {
     font-size: 18px;
     text-transform: uppercase;
     margin-bottom: 5px;
     letter-spacing: 1px;
+
+    @media(max-width: 768px) {
+      font-size: 16px;
+    }
   }
 `;
 
@@ -63,6 +68,13 @@ const Hero = styled.div`
     letter-spacing: 1px;
     font-weight: 700;
     
+    @media(max-width: 768px) {
+      font-size: 45px;
+    }
+
+    @media(max-width: 712px) {
+      font-size: 40px;
+    }
 
     span {
       color: transparent;
@@ -89,6 +101,10 @@ const Para = styled.div`
   line-height: 23px;
   font-size: 18px;
   text-transform: uppercase;
+
+  @media(max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 const Button = styled.button`
   padding: 18px 20px;

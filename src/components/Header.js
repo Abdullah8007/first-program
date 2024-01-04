@@ -1,39 +1,54 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import styled from 'styled-components';
-import MenuIcon from '@mui/icons-material/Menu';
-import ClearIcon from '@mui/icons-material/Clear';
+// import MenuIcon from '@mui/icons-material/Menu';
+// import ClearIcon from '@mui/icons-material/Clear';
+import 'bootstrap/dist/css/bootstrap.css';
 
 function Header() {
   return (
-    <Nav className='d-flex align-items-center justify-content-between p-5'>
-      <Logo src="/Images/logo.png" />
-      <ClearIcon className='d-lg-none d-sm-inline-block mx-5 button' onClick='hideMenu()' />
-      <NavMenu className=' d-sm-none d-lg-flex align-items-center'>
-        <a href='./Home.js'>
-          <span>Home</span>
-        </a>
-        <a href='./About.js'>
-          <span>About</span>
-        </a>
-        <a href=''>
-          <span>Skills</span>
-        </a>
-        <a href=''>
-          <span>Projects</span>
-        </a>
-        <a href=''>
-          <span>Contact</span>
-        </a>
-        <a href='/Resume.pdf' target='_blank' rel='noreferrer'>
-          <Button type='button'>Resume</Button>
-        </a>
-      </NavMenu>
-      <MenuIcon className='d-lg-none d-sm-inline-block mx-5 button' onClick='showMenu()' />
-    </Nav>
+    // '<Container className='container-fliud'>'
+      
+        <Nav className=''>
+          <SubContainer className='container'>
+          <Logo src="/Images/logo.png" />
+          {/* <ClearIcon className='' /> */}
+          <NavMenu className=''>
+            <a href='./Home.js'>
+              <span>Home</span>
+            </a>
+            <a href='./About.js'>
+              <span>About</span>
+            </a>
+            <a href=''>
+              <span>Skills</span>
+            </a>
+            <a href=''>
+              <span>Projects</span>
+            </a>
+            <a href=''>
+              <span>Contact</span>
+            </a>
+            <a href='/Resume.pdf' target='_blank' rel='noreferrer'>
+              <Button type='button'>Resume</Button>
+            </a>
+          </NavMenu>
+          {/* <MenuIcon className='d-lg-none d-sm-inline-block mx-5 button' onClick='showMenu()' /> */}
+          </SubContainer>
+        </Nav>
+      
+    // </Container>
   );
 };
-  
+
+// const Container = styled.div``;
+
+const SubContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`
+
 const Nav = styled.div`
   height: 80px;
   width: 100%;
@@ -41,6 +56,9 @@ const Nav = styled.div`
   background-color: #ECF0F3;
   box-shadow: 0 10px 10px #c9c9c9;
   z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   @media(max-width: 575px) {
     // height: 60px;
@@ -65,6 +83,10 @@ const Logo = styled.img`
 `;
 
 const NavMenu = styled.div`
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   a {
     padding: 0 12px;

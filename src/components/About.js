@@ -5,27 +5,29 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 function About() {
   return (
-    // <Container className='container-fluid'>
-      <Container className='container-fluid ms-auto m-auto justify-content-evenly row flex-md-nowrap p-5 p-md-4'>
-        <Image className='img col-lg-4 col-md-2 p-md-4 col-sm-10' src='/Images/about-img.png' alt='About-Img' />
-        <AboutMe className='col-lg-8 col-md-10 col-sm-12'>
-          <Title>About</Title>
-          <Head className=' mb-5 mb-sm-1'>Who I Am</Head>
-          <Para>Hi there!, I’m Abdullah, a curious frontend developer who’s trying to get a bit better every day.
-            <br></br><br></br>
-            I currently studying in S.Y.BCA from Tilak Maharashtra Vidyapeeth, Pune.
-            <br></br><br></br>
-            I have always had a knack for technology and working with computers. Fascinated with how intricate programming can be I was quickly drawn to learn more. I started learning JavaScript and was even more enthused with making websites interactive.
-            <br></br><br></br>
-            I’m very dedicated to learn new things and to truly believe that you should never stop learning. I enjoy creating different things, whether that be websites, application or anything in between.
-            <br></br><br></br>
-            I’m always looking for new opportunities to expand my understanding of web design and development, so you’ll generally find me sipping a delicious cup of coffee with my nose in a good “technical” book or plugged into my laptop drooling over all of the beauty the web has to offer. I hope to join a team of talented individuals I can learn from and build engaging digital experiences with.
-            <br></br><br></br>
-            <a href=''>Check out some of my latest projects</a>
-          </Para>
-        </AboutMe>
-      </Container>
-    // </Container>
+    <Container className='container-fluid '>
+      <SubContainer className='container'>
+        <Row className='row justify-content-between'>
+          <Image className='col-lg-4 img' src='/Images/about-img.png' alt='About-Img' />
+          <AboutMe className='col-lg-8'>
+            <Title>About</Title>
+            <Head className=' mb-5 mb-sm-1'>Who I Am</Head>
+            <Para>Hi there!, I’m Abdullah, a curious frontend developer who’s trying to get a bit better every day.
+              <br></br><br></br>
+              I currently studying in S.Y.BCA from Tilak Maharashtra Vidyapeeth, Pune.
+              <br></br><br></br>
+              I have always had a knack for technology and working with computers. Fascinated with how intricate programming can be I was quickly drawn to learn more. I started learning JavaScript and was even more enthused with making websites interactive.
+              <br></br><br></br>
+              I’m very dedicated to learn new things and to truly believe that you should never stop learning. I enjoy creating different things, whether that be websites, application or anything in between.
+              <br></br><br></br>
+              I’m always looking for new opportunities to expand my understanding of web design and development, so you’ll generally find me sipping a delicious cup of coffee with my nose in a good “technical” book or plugged into my laptop drooling over all of the beauty the web has to offer. I hope to join a team of talented individuals I can learn from and build engaging digital experiences with.
+              <br></br><br></br>
+              <a href=''>Check out some of my latest projects</a>
+            </Para>
+          </AboutMe>
+        </Row>
+      </SubContainer>
+    </Container>
   )
 };
 
@@ -39,13 +41,15 @@ const Container = styled.div`
     .img:hover {
       transform: scale(1.05, 1.05);
   }
-
-  @media (max-width: 1024px) {
-    padding: 0 200px
-  }
 `;
 
 const AboutMe = styled.div``;
+
+const Row = styled.div`
+
+`;
+
+const SubContainer = styled.div``;
 
 const Title = styled.div`
   font-size: 20px;
@@ -72,15 +76,15 @@ const Para = styled.div`
 `;
 
 const Image = styled.img`
-  width: 500px;
-  height: auto;
+  // width: 500px;
+  // height: auto;
   border: 10px solid #fff;
   border-radius: 10px;
   box-shadow: 0 10px 10px #B0B6C0;
   transition: .5s;
 
   @media (max-width: 1024px) {
-    width: 400px;
+    // width: 400px;
     height: auto;
   }
 

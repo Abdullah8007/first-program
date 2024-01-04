@@ -4,40 +4,42 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 function Skills() {
     return (
-        <Container className=' container-fluid'>
-            <Title>Skills</Title>
-            <Head className=' mb-5'>What I Can Do</Head>
-            <Sgroup className='d-flex flex-lg-wrap flex-md-wrap flex-sm-wrap row-gap-5 column-gap-5 justify-content-evenly'>
-                <Sbox className='d-flex align-items-center justify-content-evenly col-lg-4'>
-                    <Logo src='./Images/html.webp' alt=''></Logo>
-                    <Cont>HTML5</Cont>
-                </Sbox>
+        <Container className='container-fluid'>
+            <SubContainer className='container'>
+                <Title>Skills</Title>
+                <Head className=' mb-5'>What I Can Do</Head>
+                <Sgroup className='d-flex flex-lg-wrap flex-md-wrap flex-sm-wrap row-gap-5 column-gap-5 justify-content-evenly'>
+                    <Sbox className='d-flex align-items-center justify-content-evenly col-lg-4'>
+                        <Logo src='./Images/html.webp' alt=''></Logo>
+                        <Cont>HTML5</Cont>
+                    </Sbox>
 
-                <Sbox className='d-flex align-items-center justify-content-evenly'>
-                    <Logo src='./Images/css.png' alt=''></Logo>
-                    <Cont>CSS3</Cont>
-                </Sbox>
+                    <Sbox className='d-flex align-items-center justify-content-evenly'>
+                        <Logo src='./Images/css.png' alt=''></Logo>
+                        <Cont>CSS3</Cont>
+                    </Sbox>
 
-                <Sbox className='d-flex align-items-center justify-content-evenly'>
-                    <Logo src='./Images/javascript.webp' alt='' className=' align-items-center justify-content-center'></Logo>
-                    <Cont className=' align-items-center justify-content-center'>JavaScript</Cont>
-                </Sbox>
+                    <Sbox className='d-flex align-items-center justify-content-evenly'>
+                        <Logo src='./Images/javascript.webp' alt='' className=' align-items-center justify-content-center'></Logo>
+                        <Cont className=' align-items-center justify-content-center'>JavaScript</Cont>
+                    </Sbox>
 
-                <Sbox className='d-flex align-items-center justify-content-evenly'>
-                    <Logo src='./Images/react.png' alt=''></Logo>
-                    <Cont>React</Cont>
-                </Sbox>
+                    <Sbox className='d-flex align-items-center justify-content-evenly'>
+                        <Logo src='./Images/react.png' alt=''></Logo>
+                        <Cont>React</Cont>
+                    </Sbox>
 
-                <Sbox className='d-flex align-items-center justify-content-evenly'>
-                    <Logo src='./Images/bootstrap.png' alt='' className=' align-items-center justify-content-center'></Logo>
-                    <Cont>Bootstrap5</Cont>
-                </Sbox>
+                    <Sbox className='d-flex align-items-center justify-content-evenly'>
+                        <Logo src='./Images/bootstrap.png' alt='' className=' align-items-center justify-content-center'></Logo>
+                        <Cont>Bootstrap5</Cont>
+                    </Sbox>
 
-                <Sbox className='d-flex align-items-center justify-content-evenly'>
-                    <Logo src='./Images/github1.webp' alt='' className=' align-items-center justify-content-center'></Logo>
-                    <Cont>Github</Cont>
-                </Sbox>
-            </Sgroup>
+                    <Sbox className='d-flex align-items-center justify-content-evenly'>
+                        <Logo src='./Images/github1.webp' alt='' className=' align-items-center justify-content-center'></Logo>
+                        <Cont>Github</Cont>
+                    </Sbox>
+                </Sgroup>
+            </SubContainer>
         </Container>
     )
 };
@@ -47,10 +49,9 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     background-color: #ECF0F3;
-    padding: 0 100px;
+    padding: 0 50px;
     flex-direction: column;
     text-align; left;
-    position: relative;
 `;
 
 const Title = styled.div`
@@ -71,6 +72,14 @@ const Sgroup = styled.colgroup`
     :hover {
         transform: scale(1.1, 1.1);
     }
+
+    @media(max-width: 575px) {
+        flex-wrap: wrap;
+    }
+`;
+
+const SubContainer = styled.colgroup`
+    
 `;
 
 const Sbox = styled.div`
@@ -82,16 +91,29 @@ const Sbox = styled.div`
     width: 300px;
     transition: .3s;
     cursor: pointer;
+
+    @media(max-width: 575px) {
+        width: 200px;
+    }
 `;
 
 const Logo = styled.img`
     transition: .3s;
+    position: relative;
+
+    @media(max-width: 575px) {
+        padding: 0 10px;
+    }
 `;
 
 const Cont = styled.div`
     font-size: 18px;
     font-weight: 500;
     transition: .3s;
+
+    @media(max-width: 575px) {
+        padding: 0 10px;
+    }
 `;
 
 export default Skills;
