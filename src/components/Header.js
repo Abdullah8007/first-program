@@ -54,7 +54,7 @@ const Nav = styled.div`
   width: 100%;
   position: fixed;
   background-color: #ECF0F3;
-  box-shadow: 0 10px 10px #c9c9c9;
+  // box-shadow: 0 10px 10px #c9c9c9;
   z-index: 1;
   display: flex;
   justify-content: space-between;

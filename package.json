@@ -53,6 +53,7 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.3.6"
+    "tailwindcss": "^3.3.6",
+    "@babel/core": "^7.0.0-0"
   }
 }
