@@ -1,8 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+
+
+
+
 import React from 'react';
-import styled from 'styled-components';
-// import MenuIcon from '@mui/icons-material/Menu';
-// import ClearIcon from '@mui/icons-material/Clear';
+import Styled from 'styled-components';
+import MenuIcon from '@mui/icons-material/Menu';
+import ClearIcon from '@mui/icons-material/Clear';
 import 'bootstrap/dist/css/bootstrap.css';
 
 function Header() {
@@ -12,7 +16,7 @@ function Header() {
         <Nav className=''>
           <SubContainer className='container'>
           <Logo src="/Images/logo.png" />
-          {/* <ClearIcon className='' /> */}
+          <ClearIcon className='' />
           <NavMenu className=''>
             <a href='./Home.js'>
               <span>Home</span>
@@ -20,20 +24,20 @@ function Header() {
             <a href='./About.js'>
               <span>About</span>
             </a>
-            <a href=''>
+            <a>
               <span>Skills</span>
             </a>
-            <a href=''>
+            <a>
               <span>Projects</span>
             </a>
-            <a href=''>
+            <a>
               <span>Contact</span>
             </a>
             <a href='/Resume.pdf' target='_blank' rel='noreferrer'>
               <Button type='button'>Resume</Button>
             </a>
           </NavMenu>
-          {/* <MenuIcon className='d-lg-none d-sm-inline-block mx-5 button' onClick='showMenu()' /> */}
+          <MenuIcon className='d-lg-none d-sm-inline-block mx-5 button' onClick='showMenu()' />
           </SubContainer>
         </Nav>
       
@@ -41,15 +45,15 @@ function Header() {
   );
 };
 
-// const Container = styled.div``;
+// const Container = Styled.div``;
 
-const SubContainer = styled.div`
+const SubContainer = Styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
 `
 
-const Nav = styled.div`
+const Nav = Styled.div`
   height: 80px;
   width: 100%;
   position: fixed;
@@ -72,7 +76,7 @@ const Nav = styled.div`
   }
 `;
 
-const Logo = styled.img`
+const Logo = Styled.img`
   height: 50px;
   cursor: pointer;
 
@@ -82,7 +86,7 @@ const Logo = styled.img`
   }
 `;
 
-const NavMenu = styled.div`
+const NavMenu = Styled.div`
 
   display: flex;
   align-items: center;
@@ -123,7 +127,7 @@ const NavMenu = styled.div`
   }
 `;
 
-const Button = styled.button`
+const Button = Styled.button`
   padding: 9px 18px;
   color: #6A994E;
   background-color: transparent;
