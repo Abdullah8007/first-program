@@ -1,8 +1,4 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-
-
-
-
 import React from 'react';
 import Styled from 'styled-components';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -16,7 +12,7 @@ function Header() {
         <Nav className=''>
           <SubContainer className='container'>
           <Logo src="/Images/logo.png" />
-          <ClearIcon className='' />
+          <ClearIcon className='d-lg-none d-sm-inline-block mx-5 button' />
           <NavMenu className=''>
             <a href='./Home.js'>
               <span>Home</span>
