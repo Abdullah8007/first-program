@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 function Skills() {
     return (
-        <Container className='container-fluid'>
+        <Container className='container-fluid' id='skills'>
             <SubContainer className='container'>
                 <Title>Skills</Title>
                 <Head className=' mb-5'>What I Can Do</Head>

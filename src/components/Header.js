@@ -4,39 +4,53 @@ import Styled from 'styled-components';
 import MenuIcon from '@mui/icons-material/Menu';
 import ClearIcon from '@mui/icons-material/Clear';
 import 'bootstrap/dist/css/bootstrap.css';
+import { Link } from 'react-scroll';
 
 function Header() {
   return (
     // '<Container className='container-fliud'>'
-      
-        <Nav className=''>
-          <SubContainer className='container'>
-          <Logo src="/Images/logo.png" />
-          <ClearIcon className='d-lg-none d-sm-inline-block mx-5 button' />
-          <NavMenu className=''>
-            <a href='./Home.js'>
+
+    <Nav className=''>
+      <SubContainer className='container'>
+        <Logo src="/Images/logo.png" />
+        <ClearIcon className='d-lg-none d-sm-inline-block mx-5 button' />
+        <NavMenu className=''>
+          <Link to="home" spy={true} smooth={true} offset={50} duration={100}>
+            <a>
               <span>Home</span>
             </a>
-            <a href='./About.js'>
+          </Link>
+          <Link to="about" spy={true} smooth={true} offset={50} duration={100}>
+            <a>
               <span>About</span>
             </a>
+          </Link>
+          <Link to="skills" spy={true} smooth={true} offset={50} duration={100}>
             <a>
               <span>Skills</span>
             </a>
+          </Link>
+          <Link>
             <a>
               <span>Projects</span>
             </a>
+          </Link>
+          <Link>
             <a>
               <span>Contact</span>
             </a>
-            <a href='/Resume.pdf' target='_blank' rel='noreferrer'>
+          </Link>
+
+          <Link href='/Resume.pdf' target='_blank' rel='noreferrer'>
+            <a>
               <Button type='button'>Resume</Button>
             </a>
-          </NavMenu>
-          <MenuIcon className='d-lg-none d-sm-inline-block mx-5 button' onClick='showMenu()' />
-          </SubContainer>
-        </Nav>
-      
+          </Link>
+        </NavMenu>
+        <MenuIcon className='d-lg-none d-sm-inline-block mx-5 button' onClick='showMenu()' />
+      </SubContainer>
+    </Nav >
+
     // </Container>
   );
 };
@@ -89,7 +103,7 @@ const NavMenu = Styled.div`
   justify-content: center;
 
   a {
-    padding: 0 12px;
+    padding: 0 5px;
     display: flex;
     text-decoration: none;
 
@@ -117,7 +131,7 @@ const NavMenu = Styled.div`
   }
 
   @media (max-width: 575px) {
-    a {
+    Link {
       display: none;
     }
   }

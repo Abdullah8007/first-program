@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 function Home() {
   return (
-    <Container className=' container-fluid'>
+    <Container className=' container-fluid' id='home'>
       <p>Let's Build Something Together</p>
       <Hero>
         <h1>Hi, i'm Abdullah<br></br>A <span>Front-End Web Developer.</span></h1>

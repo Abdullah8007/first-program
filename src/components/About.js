@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 function About() {
   return (
-    <Container className='container-fluid '>
+    <Container className='container-fluid' id='about'>
       <SubContainer className='container'>
         <Row className='row justify-content-between'>
           <Image className='col-lg-4 img' src='/Images/about-img.png' alt='About-Img' />
