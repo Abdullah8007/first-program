@@ -9,7 +9,7 @@ function Projects() {
                 <Head className=' mb-5'>What I Have Build</Head>
                 <Row className='d-flex align-items-center justify-content-evenly flex-wrap flex-sm-nowrap gap-3'>
                     <Column className='col-lg-5 col-md-6 col-sm-6'>
-                        <Logo src="/Images/MovieMetropolis.png" alt="MovieMetropolis" className='w-100 h-auto img-fluid' />
+                        <Logo src="/Images/MovieMetropolis.png" alt="MovieMetropolis" className='w-100 h-auto' />
                         <div className="layer">
                             <h3 className='d-none'>MovieMetropolis</h3>
                         </div>
@@ -55,7 +55,7 @@ const Head = styled.div`
 const Row = styled.div``;
 
 const Column = styled.div`
-    border: 5px solid #ECF0F3;
+    border: 0px solid #EC55F3;
     box-shadow: 0 10px 10px #B0B6C0;
     border-radius: 10px;
     padding: 10px;
