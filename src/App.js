@@ -3,6 +3,7 @@ import Header from './components/Header.js';
 import Home from './components/Home.js';
 import About from './components/About.js';
 import Skills from './components/Skills.js';
+import Projects from './components/Projects.js';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Header />
       <Home />
       <About />
-      <Skills /> 
+      <Skills />
+      <Projects />
     </div>
   );
 }

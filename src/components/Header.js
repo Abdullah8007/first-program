@@ -30,7 +30,7 @@ function Header() {
               <span>Skills</span>
             </a>
           </Link>
-          <Link>
+          <Link to="projects" spy={true} smooth={true} duration={100}>
             <a>
               <span>Projects</span>
             </a>
