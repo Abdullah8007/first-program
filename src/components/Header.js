@@ -14,7 +14,7 @@ function Header() {
       <SubContainer className='container'>
         <Logo src="/Images/logo.png" />
         <ClearIcon className='d-lg-none d-sm-inline-block mx-5 button' />
-        <NavMenu className=''>
+        <NavMenu className='d-sm-none'>
           <Link to="home" spy={true} smooth={true} duration={100}>
             <a>
               <span>Home</span>
@@ -94,6 +94,11 @@ const Logo = Styled.img`
     padding-left: 50px;
     // height: 40px;
   }
+
+  @media (max-width: 425px) {
+    padding-left: 25px;
+    height: 40px;
+  }
 `;
 
 const NavMenu = Styled.div`
@@ -133,6 +138,10 @@ const NavMenu = Styled.div`
     Link {
       display: none;
     }
+  }
+
+  @media (max-width: 425px) {
+    display: none;
   }
 `;
 
