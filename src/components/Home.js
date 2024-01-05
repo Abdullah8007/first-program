@@ -53,7 +53,7 @@ const Container = styled.div`
 const Hero = styled.div`
   a {
     Button:hover {
-      transform: scale(1.1, 1.1);
+      transform: scale(1.2, 1.2);
       
     }
   }

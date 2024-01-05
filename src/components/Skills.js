@@ -78,7 +78,7 @@ const Sgroup = styled.colgroup`
     }
 `;
 
-const SubContainer = styled.colgroup`
+const SubContainer = styled.div`
     
 `;
 

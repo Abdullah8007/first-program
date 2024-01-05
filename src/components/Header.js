@@ -15,17 +15,17 @@ function Header() {
         <Logo src="/Images/logo.png" />
         <ClearIcon className='d-lg-none d-sm-inline-block mx-5 button' />
         <NavMenu className=''>
-          <Link to="home" spy={true} smooth={true} offset={50} duration={100}>
+          <Link to="home" spy={true} smooth={true} duration={100}>
             <a>
               <span>Home</span>
             </a>
           </Link>
-          <Link to="about" spy={true} smooth={true} offset={50} duration={100}>
+          <Link to="about" spy={true} smooth={true} duration={100}>
             <a>
               <span>About</span>
             </a>
           </Link>
-          <Link to="skills" spy={true} smooth={true} offset={50} duration={100}>
+          <Link to="skills" spy={true} smooth={true} duration={100}>
             <a>
               <span>Skills</span>
             </a>
@@ -115,7 +115,6 @@ const NavMenu = Styled.div`
     }
 
     span {
-      // font-weight: 600;
       color: #434343;
       letter-spacing: .3px;
       text-decoration: none;
@@ -145,7 +144,6 @@ const Button = Styled.button`
   border-radius: 5px;
   font-size: 16px;
   text-transform: uppercase;
-  font-weight: 500;
   cursor: pointer;
   box-shadow: 5px 5px 10px rgb(21 230 76 / 26%);
   font-family: 'Poppins', sans-serif;
