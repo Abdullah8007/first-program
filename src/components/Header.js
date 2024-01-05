@@ -14,7 +14,7 @@ function Header() {
       <SubContainer className='container'>
         <Logo src="/Images/logo.png" />
         <ClearIcon className='d-lg-none d-sm-inline-block mx-5 button' />
-        <NavMenu className='d-sm-none'>
+        <NavMenu className=''>
           <Link to="home" spy={true} smooth={true} duration={100}>
             <a>
               <span>Home</span>

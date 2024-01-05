@@ -64,12 +64,39 @@ const Column = styled.div`
 `;
 
 const Layer = styled.div`
-        text-align: center;
-        transform: translateY(-75px);
-        display: none;
-        letter-spacing: 1px;
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+
+        :hover {
+            background: rgba(249, 54, 54, 0.7);
+        }
+
+        h3 {
+            width: 100%;
+            font-weight: 500;
+            color: #fff;
+            font-size: 26px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            transition: 0.5s;
+
+            :hover {
+                bottom: 49%;
+                opacity: 1;
+            }
+        }
 `;
 
-const Logo = styled.img``;
+const Logo = styled.img`
+    display: block;
+    width: 100%
+`;
 
 export default Projects;
