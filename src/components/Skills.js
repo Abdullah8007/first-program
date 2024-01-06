@@ -94,6 +94,11 @@ const Sbox = styled.div`
 
     @media(max-width: 575px) {
         width: 200px;
+flex-basis: 100%;
+    }
+
+    @media(max-width: 425px) {
+        flex-basis: 100%;
     }
 `;
 
