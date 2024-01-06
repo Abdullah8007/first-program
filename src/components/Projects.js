@@ -11,15 +11,13 @@ function Projects() {
                     <Column className='col-lg-5 col-md-6 col-sm-6'>
                         <Logo src="/Images/MovieMetropolis.png" alt="MovieMetropolis" className='w-100 h-auto' />
                         <Layer className="layer">
-                            <h3 className=''>MovieMetropolis</h3>
-                            <p>React JS</p>
+                            <h3 className=''>MovieMetropolis<br></br>React JS</h3>
                         </Layer>
                     </Column>
                     <Column className='col-lg-5 col-md-6 col-sm-6'>
                         <Logo src="/Images/Eduford.png" alt="Eduford" className='w-100 h-auto' />
                         <Layer className="layer">
-                            <h3 className=''>Eduford</h3>
-                            <p>HTML,CSS,JS</p>
+                            <h3 className=''>Eduford<br></br>HTML,CSS,JS</h3>
                         </Layer>
                     </Column>
                 </Row>
@@ -61,6 +59,17 @@ const Column = styled.div`
     box-shadow: 0 10px 10px #B0B6C0;
     border-radius: 10px;
     padding: 10px;
+    position: relative;
+    overflow: hidden;
+    flex-basis: 50%;
+
+    @media(max-width: 575px) {
+        flex-basis: 100%;
+    }
+    
+    @media(max-width: 425px) {
+        flex-basis: 100%;
+    }
 `;
 
 const Layer = styled.div`
@@ -71,32 +80,29 @@ const Layer = styled.div`
     top: 0;
     left: 0;
     transition: 0.5s;
+    text-align: center;
 
         :hover {
-            background: rgba(249, 54, 54, 0.7);
+            background: rgba(106, 153, 78, .7);
+            height: 100%;
+            width: 100%;
+            color: #374151;
+            // transform: translateY(50%)
         }
 
         h3 {
             width: 100%;
+            height: 100%;
             font-weight: 500;
             color: #fff;
-            font-size: 26px;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            position: absolute;
-            transition: 0.5s;
-
-            :hover {
-                bottom: 49%;
-                opacity: 1;
-            }
+            font-size: 20px;
+            position: relative;
+            transition: 0.3s;
         }
 `;
 
 const Logo = styled.img`
     display: block;
-    width: 100%
 `;
 
 export default Projects;

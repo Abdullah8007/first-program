@@ -108,7 +108,7 @@ const NavMenu = Styled.div`
   justify-content: center;
 
   a {
-    padding: 0 5px;
+    padding: 0 8px;
     display: flex;
     text-decoration: none;
 
