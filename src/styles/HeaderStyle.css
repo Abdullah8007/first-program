@@ -1,5 +1,5 @@
 .btn-main {
-  padding: 9px 18px;
+  padding: 9px 20px;
   color: #6A994E !important;
   background-color: transparent !important;
   border: 2px solid #6A994E !important;
@@ -10,6 +10,7 @@
   cursor: pointer;
   box-shadow: 5px 5px 10px rgb(21 230 76 / 26%);
   font-family: 'Poppins', sans-serif;
+  transition: .3s;
 }
 
 .btn-main:hover {
@@ -72,12 +73,13 @@ header .nav-link {
   transition: all 10ms ease-in-out;
 }
 
-/* header .nav-link.active{
+header .nav-link.active{
   color: #6A994E !important;
-} */
+}
 
 header .nav-link:hover {
   color: #6A994E !important;
+  transition:  .3s;
 }
 
 

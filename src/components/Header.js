@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Button from 'react-bootstrap/Button';
+import styled from "styled-components";
+// import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -21,9 +22,9 @@ const Header = () => {
   return (
     <header>
       <Navbar collapseOnSelect expand="lg" className={`${nav === true ? "sticky" : ""} `}>
-        <Container className='px-5'>
-          <Navbar.Brand href="#">
-            <img src='/Images/logo.png' alt='logo' className='img-fluid h-50 w-50' />
+        <Container className=''>
+          <Navbar.Brand href="https:\\abdullahjagrala.vercel.app" target="_blank">
+            <img src='/Images/logo.png' alt='logo' className='img-fluid h-25 w-25' />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
@@ -36,7 +37,7 @@ const Header = () => {
               <Nav.Link Link to="skills" spy={true} smooth={true} offset={50} duration={100} className='nav-menu'>Skills</Nav.Link>
               <Nav.Link Link to="projects" spy={true} smooth={true} offset={50} duration={100} className='nav-menu'>Projects</Nav.Link>
               <Nav.Link Link to="contact" spy={true} smooth={true} offset={50} duration={100} className='nav-menu'>Contact</Nav.Link>
-              <Button className='btn btn-main'>Resume</Button>
+              <a href='/Resume.pdf' target='_blank' rel='noreferrer'><Button className='btn-main nav-menu'>Resume</Button></a>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -44,6 +45,8 @@ const Header = () => {
     </header>
   );
 };
+
+const Button = styled.button``;
 
 // const Container = Styled.div``;
 
