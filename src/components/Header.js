@@ -37,17 +37,7 @@ const Header = () => {
               <Nav.Link Link to="skills" spy={true} smooth={true} offset={50} duration={100} className='nav-menu'>Skills</Nav.Link>
               <Nav.Link Link to="projects" spy={true} smooth={true} offset={50} duration={100} className='nav-menu'>Projects</Nav.Link>
               <Nav.Link Link to="contact" spy={true} smooth={true} offset={50} duration={100} className='nav-menu'>Contact</Nav.Link>
-              <Button className='btn main'
-              // style={{
-              //   padding: '9px 20px',
-              //   color: '#6a994e',
-              //   backgroundColor: 'transparent',
-              //   border: '2px solid #6a994e',
-              //   borderRadius: '5px',
-              //   textTransform: 'uppercase',
-              //   cursor: 'pointer',
-              //   boxShadow: '5px 5px 10px rgb(21 230 76 / 26%)'}}
-              >Resume</Button>
+              <Button className='btn main'>Resume</Button>
             </Nav>
           </Navbar.Collapse>
         </Container>

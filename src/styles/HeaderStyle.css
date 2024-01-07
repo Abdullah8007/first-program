@@ -89,7 +89,7 @@ header .nav-link:hover {
 @media (max-width: 992px) {
   header .navbar {
     background-color: #ECF0F3;
-    box-shadow: 5px 5px 10px #B0B6C0;
+    /* box-shadow: 5px 5px 10px #B0B6C0; */
   }
 
   header .navbar-toggler {
@@ -102,8 +102,8 @@ header .nav-link:hover {
   }
 
   header .navbar-toggler-icon {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   header .nav-link {
