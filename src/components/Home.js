@@ -3,7 +3,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import { GitHub, LinkedIn, MailOutlineRounded, RecentActorsRounded } from '@mui/icons-material';
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Home() {
   return (

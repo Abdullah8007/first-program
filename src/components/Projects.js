@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Projects() {
     return (
@@ -11,13 +12,13 @@ function Projects() {
                     <Column className='col-lg-5 col-md-6 col-sm-6'>
                         <Logo src="/Images/MovieMetropolis.png" alt="MovieMetropolis" className='w-100 h-auto' />
                         <Layer className="layer">
-                            <h3 className=''>MovieMetropolis<br></br>React JS</h3>
+                            <h3 className='h3'>MovieMetropolis<br></br>React JS</h3>
                         </Layer>
                     </Column>
                     <Column className='col-lg-5 col-md-6 col-sm-6'>
                         <Logo src="/Images/Eduford.png" alt="Eduford" className='w-100 h-auto' />
                         <Layer className="layer">
-                            <h3 className=''>Eduford<br></br>HTML,CSS,JS</h3>
+                            <h3 className='h3'>Eduford<br></br>HTML,CSS,JS</h3>
                         </Layer>
                     </Column>
                 </Row>
@@ -80,24 +81,28 @@ const Layer = styled.div`
     top: 0;
     left: 0;
     transition: 0.5s;
-    text-align: center;
 
         :hover {
             background: rgba(106, 153, 78, .7);
-            height: 100%;
-            width: 100%;
-            color: #374151;
-            // transform: translateY(50%)
+            transform: translateY(-50%);
         }
 
-        h3 {
+        .h3 {
             width: 100%;
-            height: 100%;
             font-weight: 500;
             color: #fff;
-            font-size: 20px;
-            position: relative;
-            transition: 0.3s;
+            font-size: 26px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            transition: 0.5s;
+            text-align: center;
+
+            :hover {
+                bottom: 49%;
+                opacity: 1;
+            }
         }
 `;
 
