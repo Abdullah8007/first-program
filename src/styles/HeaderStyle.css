@@ -1,8 +1,8 @@
-.main {
+.btn-main {
   padding: 9px 18px;
-  color: #6A994E;
-  background-color: transparent;
-  border: 2px solid #6A994E;
+  color: #6A994E !important;
+  background-color: transparent !important;
+  border: 2px solid #6A994E !important;
   border-radius: 5px;
   font-size: 16px;
   font-weight: 500;
@@ -12,10 +12,11 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.main:hover {
-  background-color: #6A994E;
-  color: #ECF0F3;
-  border: 2px solid #6A994E;
+.btn-main:hover {
+  background-color: #6A994E !important;
+  color: #ECF0F3 !important;
+  border: 2px solid #6A994E !important;
+  box-shadow: 5px 5px 10px rgb(21 230 76 / 26%) !important;
 }
 
 header .navbar {
@@ -107,7 +108,7 @@ header .nav-link:hover {
   }
 
   header .nav-link {
-    background-color: #ECF0F3;
+    /* background-color: #ECF0F3; */
     padding: 1rem !important;
   }
 }

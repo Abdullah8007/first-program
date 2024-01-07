@@ -7,7 +7,7 @@ import '../styles/HeaderStyle.css';
 
 
 const Header = () => {
-  
+
   const [nav, setNav] = useState(false);
 
   // Scroll Navbar
@@ -23,13 +23,12 @@ const Header = () => {
       <Navbar collapseOnSelect expand="lg" className={`${nav === true ? "sticky" : ""} `}>
         <Container className='px-5'>
           <Navbar.Brand href="#">
-            <img src='/Images/logo.png' alt='logo' className='img-fluid h-25 w-25' />
+            <img src='/Images/logo.png' alt='logo' className='img-fluid h-50 w-50' />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
               className="ms-auto my-2 my-lg-0 align-items-center text-uppercase"
-              // style={{ maxHeight: '100px' }}
               navbarScroll
             >
               <Nav.Link Link to="home" spy={true} smooth={true} offset={50} duration={100} className='nav-menu'>Home</Nav.Link>
@@ -37,7 +36,7 @@ const Header = () => {
               <Nav.Link Link to="skills" spy={true} smooth={true} offset={50} duration={100} className='nav-menu'>Skills</Nav.Link>
               <Nav.Link Link to="projects" spy={true} smooth={true} offset={50} duration={100} className='nav-menu'>Projects</Nav.Link>
               <Nav.Link Link to="contact" spy={true} smooth={true} offset={50} duration={100} className='nav-menu'>Contact</Nav.Link>
-              <Button className='btn main'>Resume</Button>
+              <Button className='btn btn-main'>Resume</Button>
             </Nav>
           </Navbar.Collapse>
         </Container>
