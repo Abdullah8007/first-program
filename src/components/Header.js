@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <header>
       <Navbar collapseOnSelect expand="lg" className={`${nav === true ? "sticky" : ""} `}>
-        <Container fluid className='px-5'>
+        <Container className='px-5'>
           <Navbar.Brand href="#">
             <img src='/Images/logo.png' alt='logo' className='img-fluid h-25 w-25' />
           </Navbar.Brand>
@@ -32,11 +32,11 @@ const Header = () => {
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <Nav.Link href="#action1" className='px-3'>Home</Nav.Link>
-              <Nav.Link href="#action2" className='px-3'>About</Nav.Link>
-              <Nav.Link href="#action2" className='px-3'>Skills</Nav.Link>
-              <Nav.Link href="#action2" className='px-3'>Projects</Nav.Link>
-              <Nav.Link href="#action2" className='px-3'>Contact</Nav.Link>
+              <Nav.Link href="#action1" className='px-3 nav-menu'>Home</Nav.Link>
+              <Nav.Link href="#action2" className='px-3 nav-menu'>About</Nav.Link>
+              <Nav.Link href="#action2" className='px-3 nav-menu'>Skills</Nav.Link>
+              <Nav.Link href="#action2" className='px-3 nav-menu'>Projects</Nav.Link>
+              <Nav.Link href="#action2" className='px-3 nav-menu'>Contact</Nav.Link>
               <Button className='btn main'
               // style={{
               //   padding: '9px 20px',

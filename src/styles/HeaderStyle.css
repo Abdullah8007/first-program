@@ -29,11 +29,11 @@ header .navbar.sticky {
   left: 0;
   top: 0;
   background-color: #ECF0F3;
-  -webkit-transition: all 15ms ease-in-out;
-  -moz-transition: all 15ms ease-in-out;
-  -o-transition: all 15ms ease-in-out;
-  -ms-transition: all 15ms ease-in-out;
-  transition: all 15ms ease-in-out;
+  -webkit-transition: all 10ms ease-in-out;
+  -moz-transition: all 10ms ease-in-out;
+  -o-transition: all 10ms ease-in-out;
+  -ms-transition: all 10ms ease-in-out;
+  transition: all 10ms ease-in-out;
   animation-name: stickyTransition;
   -webkit-animation-duration: 0.1s;
   animation-duration: 0.2s;
@@ -54,4 +54,8 @@ header .navbar.sticky {
     -webkit-transform: none;
     transform: none;
   }
+}
+
+header .nav-menu{
+  
 }
