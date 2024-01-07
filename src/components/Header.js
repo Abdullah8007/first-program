@@ -29,14 +29,14 @@ const Header = () => {
           <Navbar.Collapse id="navbarScroll">
             <Nav
               className="ms-auto my-2 my-lg-0 align-items-center text-uppercase"
-              style={{ maxHeight: '100px' }}
+              // style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <Nav.Link href="#action1" className='px-3 nav-menu'>Home</Nav.Link>
-              <Nav.Link href="#action2" className='px-3 nav-menu'>About</Nav.Link>
-              <Nav.Link href="#action2" className='px-3 nav-menu'>Skills</Nav.Link>
-              <Nav.Link href="#action2" className='px-3 nav-menu'>Projects</Nav.Link>
-              <Nav.Link href="#action2" className='px-3 nav-menu'>Contact</Nav.Link>
+              <Nav.Link Link to="home" spy={true} smooth={true} offset={50} duration={100} className='nav-menu'>Home</Nav.Link>
+              <Nav.Link Link to="about" spy={true} smooth={true} offset={50} duration={100} className='nav-menu'>About</Nav.Link>
+              <Nav.Link Link to="skills" spy={true} smooth={true} offset={50} duration={100} className='nav-menu'>Skills</Nav.Link>
+              <Nav.Link Link to="projects" spy={true} smooth={true} offset={50} duration={100} className='nav-menu'>Projects</Nav.Link>
+              <Nav.Link Link to="contact" spy={true} smooth={true} offset={50} duration={100} className='nav-menu'>Contact</Nav.Link>
               <Button className='btn main'
               // style={{
               //   padding: '9px 20px',
