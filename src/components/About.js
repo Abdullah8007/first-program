@@ -31,7 +31,7 @@ function About() {
     // </Container>
 
     <section className='about-section' id='about'>
-      <Container fluid>
+      <Container className='h-full'>
         <Container>
           <Row className='justify-content-center align-items-center'>
             <h3 className='head'>About</h3>

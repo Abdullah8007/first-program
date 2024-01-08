@@ -49,9 +49,14 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     background-color: #ECF0F3;
-    padding: 0 50px;
+    padding: 0px;
     flex-direction: column;
     text-align; left;
+
+    @media (max-width: 767px) {
+        padding-top: 20rem;
+        paddig-bottom: 0;
+    }
 `;
 
 const Title = styled.div`
@@ -94,7 +99,7 @@ const Sbox = styled.div`
 
     @media(max-width: 575px) {
         width: 200px;
-flex-basis: 100%;
+        flex-basis: 100%;
     }
 
     @media(max-width: 425px) {

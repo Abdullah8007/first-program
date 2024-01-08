@@ -30,14 +30,15 @@ function Home() {
 };
 
 const Container = styled.div`
-  text-align: center;
-  /* display: flex; */
-  /* justify-content: center; */
-  flex-direction: column;
-  /* height: 100vh; */
-  background-color: #ECF0F3;
-  padding: 350px 0;
-  
+    text-align: center;
+    flex-direction: column;
+    background-color: #ECF0F3;
+    // padding: 350px 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
   p {
     font-size: 18px;
     text-transform: uppercase;
@@ -116,6 +117,10 @@ const Button = styled.button`
   margin-top: 20px;
   cursor: pointer;
   transition: .3s;
+
+  @media (max-width: 320px) {
+    margin: 0 5px;
+  }
 `;
 
 export default Home;

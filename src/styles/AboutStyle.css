@@ -3,8 +3,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px 0;
+    height: 100vh;
     background-color: #ECF0F3;
+}
+
+@media (max-width: 1024px) {
+    .about-section {
+        padding: 30rem 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .about-section {
+        padding: 51rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 50rem 0;
+    }
 }
 
 .about-section .img-fluid {

@@ -10,7 +10,7 @@ function Projects() {
                 <Head className=' mb-5'>What I Have Build</Head>
                 <Row className='d-flex align-items-center justify-content-evenly flex-wrap flex-sm-nowrap gap-3'>
                     <Column className='col-lg-5 col-md-6 col-sm-6'>
-                        <Logo src="/Images/MovieMetropolis.png" alt="MovieMetropolis" className='w-100 h-auto' />
+                        <Logo src="/Images/MovieMetropolis.png" alt="MovieMetropolis" className='w-100' />
                         <Layer className="layer">
                             <h3 className='h3'>MovieMetropolis<br></br>React JS</h3>
                         </Layer>
@@ -32,12 +32,18 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     background-color: #ECF0F3;
-    padding: 0 50px;
     flex-direction: column;
     text-align; left;
+    padding-top: 40px;
+
+     @media (max-width: 767px) {
+       padding: 35rem 0;
+    }
 `;
 
-const SubContainer = styled.div``;
+const SubContainer = styled.div`
+   
+`;
 
 const Title = styled.div`
     font-size: 20px;
@@ -53,7 +59,11 @@ const Head = styled.div`
     letter-spacing: 1px;
 `;
 
-const Row = styled.div``;
+const Row = styled.div`
+    @media (max-width: 575px) {
+        flex: wrap;
+    }
+`;
 
 const Column = styled.div`
     border: 0px solid #EC55F3;
@@ -66,6 +76,7 @@ const Column = styled.div`
 
     @media(max-width: 575px) {
         flex-basis: 100%;
+        flex: wrap;
     }
     
     @media(max-width: 425px) {
@@ -107,7 +118,6 @@ const Layer = styled.div`
 `;
 
 const Logo = styled.img`
-    display: block;
 `;
 
 export default Projects;
