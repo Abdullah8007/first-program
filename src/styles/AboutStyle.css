@@ -1,0 +1,41 @@
+.about-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    background-color: #ECF0F3;
+}
+
+.about-section .img-fluid {
+    border: 5px solid #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #B0B6C0;
+    cursor: pointer;
+    transition: all .9s ease-in-out;
+}
+
+/* .about-section .img-fluid:hover{
+    transform: scale(1.1, 1.1);
+} */
+
+.about-section .head {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #6A994E;
+    letter-spacing: 1px;
+}
+
+.about-section .title {
+    font-size: 32px;
+    /* padding: 16px 0; */
+    margin: 16px 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.about-section .parah {
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-weight: 500;
+}

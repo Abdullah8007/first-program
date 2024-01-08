@@ -73,14 +73,26 @@ header .nav-link {
   transition: all 10ms ease-in-out;
 }
 
-header .nav-link.active{
+header .nav-link a.active{
   color: #6A994E !important;
+  text-decoration: none !important;
 }
 
 header .nav-link:hover {
   color: #6A994E !important;
   transition:  .3s;
 }
+
+/* header .nav-link::after {
+  content: '';
+  width: 0%;
+  margin: auto;
+  height: 2px;
+  background: #6A994E;
+  position: absolute;
+  bottom: -4px;
+  left: 0px;
+}  */
 
 
 /* header .navbar-toggler:focus{
