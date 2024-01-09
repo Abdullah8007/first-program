@@ -53,10 +53,16 @@ const Container = styled.div`
     flex-direction: column;
     text-align; left;
 
-    @media (max-width: 767px) {
-        padding-top: 20rem;
+    @media (max-width: 991px) {
+        padding-top: -20rem;
         paddig-bottom: 0;
     }
+
+    @media (min-width: 768px)
+.container, .container-md, .container-sm {
+    max-width: 720px;
+    max-height: 1020px;
+}
 `;
 
 const Title = styled.div`
