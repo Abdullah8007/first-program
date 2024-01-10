@@ -8,7 +8,7 @@
   font-weight: 500;
   text-transform: uppercase;
   cursor: pointer;
-  box-shadow: 5px 5px 10px rgb(21 230 76 / 26%);
+  box-shadow: 5px 5px 10px rgba(21, 230, 77, 0.166);
   font-family: 'Poppins', sans-serif;
   transition: .3s;
 }
@@ -17,7 +17,7 @@
   background-color: #6A994E !important;
   color: #ECF0F3 !important;
   border: 2px solid #6A994E !important;
-  box-shadow: 5px 5px 10px rgb(21 230 76 / 26%) !important;
+  box-shadow: 5px 5px 10px rgba(9, 156, 48, 0.59) !important;
 }
 
 header .navbar {
@@ -41,9 +41,9 @@ header .navbar.sticky {
   -webkit-animation-duration: 0.1s;
   animation-duration: 0.2s;
   animation-fill-mode: both;
-  -webkit-box-shadow: 5px 5px 10px #B0B6C0;
-  -moz-box-shadow: 5px 5px 10px #B0B6C0;
-  box-shadow: 5px 5px 10px #B0B6C0;
+  -webkit-box-shadow: 5px 10px 10px #B0B6C0;
+  -moz-box-shadow: 5px 10px 10px #B0B6C0;
+  box-shadow: 5px 10px 10px #B0B6C0;
 }
 
 @keyframes stickyTransition {

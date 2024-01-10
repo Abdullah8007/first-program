@@ -4,6 +4,7 @@ import React from 'react'
 import styled from 'styled-components';
 import { GitHub, LinkedIn, MailOutlineRounded, RecentActorsRounded } from '@mui/icons-material';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-scroll';
 
 function Home() {
   return (
@@ -18,9 +19,9 @@ function Home() {
         <a href='https://github.com/Abdullah8007' target='_blank' rel='noreferrer'>
           <Button type='button'><GitHub /></Button>
         </a>
-        <a>
+        <Link to="contact" spy={true} smooth={true} offset={0} duration={100}>
           <Button type='button'><MailOutlineRounded /></Button>
-        </a>
+        </Link>
         <a href='/Resume.pdf' target='_blank' rel='noreferrer'>
           <Button type='button'><RecentActorsRounded /></Button>
         </a>
@@ -33,7 +34,8 @@ const Container = styled.div`
     text-align: center;
     flex-direction: column;
     background-color: #ECF0F3;
-    // padding: 350px 0;
+    // padding: 250px 0;
+    // padding-top: 300px
     height: 100vh;
     display: flex;
     align-items: center;

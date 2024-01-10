@@ -45,24 +45,14 @@ function Skills() {
 };
 
 const Container = styled.div`
-    height: 100vh;
+    height: 130vh;
+    padding-top: 120px;
     display: flex;
     justify-content: center;
     background-color: #ECF0F3;
     padding: 0px;
     flex-direction: column;
     text-align; left;
-
-    @media (max-width: 991px) {
-        padding-top: -20rem;
-        paddig-bottom: 0;
-    }
-
-    @media (min-width: 768px)
-.container, .container-md, .container-sm {
-    max-width: 720px;
-    max-height: 1020px;
-}
 `;
 
 const Title = styled.div`
@@ -96,7 +86,7 @@ const SubContainer = styled.div`
 const Sbox = styled.div`
     border: 0px solid #ECF0F3;
     background-color: transparent;
-    box-shadow: 0 10px 10px #B0B6C0;
+    box-shadow: 5px 10px 10px #B0B6C0;
     border-radius: 10px;
     padding: 10px;
     width: 300px;

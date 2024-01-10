@@ -1,7 +1,6 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/AboutStyle.css';
+import { Link } from 'react-scroll';
 import { Container, Row, Col } from 'react-bootstrap';
 
 function About() {
@@ -51,7 +50,7 @@ function About() {
                 <br></br><br></br>
                 I’m always looking for new opportunities to expand my understanding of web design and development, so you’ll generally find me sipping a delicious cup of coffee with my nose in a good “technical” book or plugged into my laptop drooling over all of the beauty the web has to offer. I hope to join a team of talented individuals I can learn from and build engaging digital experiences with.
                 <br></br><br></br>
-                <a href=''>Check out some of my latest projects</a>
+                <Link to="projects" className='a-project' spy={true} smooth={true} offset={0} duration={100}>Check out some of my latest projects</Link>
               </p>
             </Col>
           </Row>

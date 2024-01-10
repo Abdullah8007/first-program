@@ -1,5 +1,6 @@
 .about-section {
-    height: 100vh;
+    /* height: 100vh; */
+    padding: 150px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +29,7 @@
 .about-section .img-fluid {
     border: 5px solid #fff;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px #B0B6C0;
+    box-shadow: 5px 10px 10px #B0B6C0;
     cursor: pointer;
     transition: all .9s ease-in-out;
 }
@@ -56,4 +57,8 @@
     letter-spacing: 1px;
     text-transform: capitalize;
     font-weight: 500;
+}
+
+.about-section .parah .a-project {
+    cursor: pointer;
 }
