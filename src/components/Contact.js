@@ -1,12 +1,36 @@
-import React from 'react'
+import { React, useState } from 'react'
 import { GitHub, LinkedIn, Instagram, RecentActorsRounded } from '@mui/icons-material';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import { Form, Col, Container, Row } from 'react-bootstrap';
 import '../styles/ContactStyle.css';
 import { Link } from 'react-scroll';
 import styled from 'styled-components';
+import { db } from '../firebaseConfig.js'
+import { addDoc, collection } from 'firebase/firestore';
 
 function Contact() {
+  const [name, setName] = useState('');
+  const [number, setNumber] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('')
+
+  const userCollectionRef = collection(db, "contactdata")
+
+  const handleSubmit = () => {
+    addDoc(userCollectionRef, {
+      Name: name,
+      Number: number,
+      Email: email,
+      Subject: subject,
+      Message: message
+    }).then(() => {
+      if(!alert("Form Submitted Successfully!!!"));
+    }).catch(() => {
+      alert("Failed to submit form.");
+    })
+  }
+
   return (
     <section className='contact-section' id='contact'>
       <Container fluid>
@@ -47,34 +71,44 @@ function Contact() {
                     <Col sm={6} lg={6} className='mb-3 mb-lg-0'>
                       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                         <Form.Label className='text-uppercase'>Name</Form.Label>
-                        <Form.Control type="text" className='p-3 fs-5' />
+                        <Form.Control onChange={(event) => {
+                          setName(event.target.value)
+                        }} type="text" className='p-3 fs-5' />
                       </Form.Group>
                     </Col>
                     <Col sm={6} lg={6} className='mb-3 mb-lg-0'>
                       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                         <Form.Label className='text-uppercase'>Phone Number</Form.Label>
-                        <Form.Control type="text" className='p-3 fs-5' />
+                        <Form.Control onChange={(event) => {
+                          setNumber(event.target.value)
+                        }} type="number" className='p-3 fs-5' />
                       </Form.Group>
                     </Col>
                     <Col lg={12} className='mb-3 mb-lg-0'>
                       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                         <Form.Label className='text-uppercase'>Email</Form.Label>
-                        <Form.Control type="email" className='p-3 fs-5' />
+                        <Form.Control onChange={(event) => {
+                          setEmail(event.target.value)
+                        }} type="email" className='p-3 fs-5' />
                       </Form.Group>
                     </Col>
                     <Col lg={12} className='mb-3 mb-lg-0'>
                       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                         <Form.Label className='text-uppercase'>Subject</Form.Label>
-                        <Form.Control type="text" className='p-3 fs-5' />
+                        <Form.Control onChange={(event) => {
+                          setSubject(event.target.value)
+                        }} type="text" className='p-3 fs-5' />
                       </Form.Group>
                     </Col>
                     <Col lg={12} className='mb-3 mb-lg-0'>
                       <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                         <Form.Label className='text-uppercase'>Message</Form.Label>
-                        <Form.Control as="textarea" rows={5} className='p-3 fs-5' />
+                        <Form.Control onChange={(event) => {
+                          setMessage(event.target.value)
+                        }} as="textarea" rows={5} className='p-3 fs-5' />
                       </Form.Group>
                     </Col>
-                    <Button type='button' className='btn-main p-2'>Send Message</Button>
+                    <Button onClick={handleSubmit} type='button' className='btn-main p-2'>Send Message</Button>
                   </Row>
                 </Form>
               </div>
