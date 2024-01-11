@@ -91,4 +91,4 @@ function Contact() {
 
 const Button = styled.button``;
 
-export default Contact
+export default Contact;

@@ -1,10 +1,18 @@
 .contact-section {
     /* height: 130vh; */
-    padding: 200px 0;
+    padding-top: 100px;
+    padding-bottom: 20px;
     background-color: #ECF0F3;
     align-items: center;
     justify-content: center;
     display: flex;
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding-top: 110px;
+        padding-bottom: 20px;
+    }
 }
 
 @media (max-width: 425px) {
@@ -36,6 +44,18 @@
     height: 800px;
 }
 
+@media (max-width: 768px) {
+    .contact-section .contact-left {
+        height: 1010px;
+    }
+}
+
+@media (max-width: 425px) {
+    .contact-section .contact-left {
+        height: 750px;
+    }
+}
+
 .contact-section .contact-left img {
     transition: 0.5s;
 }
@@ -63,7 +83,7 @@
 }
 
 .contact-section .down {
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .contact-section .down .head {
@@ -84,7 +104,7 @@
     border-radius: 50%;
     background-color: transparent;
     box-shadow: 0 10px 10px #B0B6C0;
-    margin-top: 20px;
+    margin-top: 10px;
     cursor: pointer;
     transition: .3s;
     color: #212529;
@@ -93,6 +113,12 @@
 @media (max-width: 1199px) {
     .contact-section .down a .menu-btn {
         margin: 20px 5px;
+    }
+}
+
+@media (max-width: 425px) {
+    .contact-section .down a .menu-btn {
+        margin: 20px 12px;
     }
 }
 
@@ -146,6 +172,12 @@
     cursor: pointer;
     transition: .3s;
     width: auto;
+}
+
+@media(max-width: 425px) {
+    .contact-section .to-top-btn {
+        margin-top: 10px;
+    }
 }
 
 .contact-section .to-top-btn:hover {

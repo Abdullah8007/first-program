@@ -14,7 +14,7 @@ function Home() {
         <p>Let's Build Something Together</p>
         <Hero>
           <h1>Hi, i'm <span>Abdullah</span><br></br>A Front-End Web Developer.</h1>
-          <Para>I’m focused on building responsive front-end web applications while persuing S.Y.BCA.</Para>
+          <Para>I’m focused on building responsive front-end web applications while persuing BCA.</Para>
           <a href='https://www.linkedin.com/in/abdullah-jagrala-789234280/' target='_blank' rel='noreferrer'>
             <Button type='button'><LinkedIn /></Button>
           </a>

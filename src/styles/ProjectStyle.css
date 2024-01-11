@@ -1,15 +1,20 @@
 .project-section {
-    height: 120vh;
-    /* padding-top: 50px; */
+    /* height: 120vh; */
+    padding-top: 100px;
     background-color: #ECF0F3;
     align-items: center;
     justify-content: center;
     display: flex;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 425px) {
     .project-section {
-        padding-top: 65rem;
+        height: 120vh;
+        /* padding-top: 100px; */
+        background-color: #ECF0F3;
+        align-items: center;
+        justify-content: center;
+        display: flex;
     }
 }
 
@@ -119,6 +124,7 @@
     box-shadow: none;
     padding: 9px 30px;
     font-family: 'Poppins', sans-serif;
+    margin: 0 5px;
 }
 
 .project-section .row .overlay .layer .btn:hover {
