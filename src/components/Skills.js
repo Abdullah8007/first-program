@@ -92,6 +92,7 @@ const Sbox = styled.div`
     width: 300px;
     transition: .3s;
     cursor: pointer;
+    // animation: fade-in 1s;
 
     @media(max-width: 575px) {
         width: 200px;
@@ -101,6 +102,18 @@ const Sbox = styled.div`
     @media(max-width: 425px) {
         flex-basis: 100%;
     }
+
+    // @keyframes fade-in {
+    //     0% {
+    //         opacity: 0;
+    //         transform: translateY(30px) scale(0.9);
+    //     }
+    
+    //     100% {
+    //         opacity: 1;
+    //         transform: translateY(0px) scale(1);
+    //     }
+    // }
 `;
 
 const Logo = styled.img`

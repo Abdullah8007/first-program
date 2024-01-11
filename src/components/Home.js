@@ -3,30 +3,33 @@
 import React from 'react'
 import styled from 'styled-components';
 import { GitHub, LinkedIn, MailOutlineRounded, RecentActorsRounded } from '@mui/icons-material';
+import '../styles/HomeStyle.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-scroll';
 
 function Home() {
   return (
-    <Container className=' container-fluid' id='home'>
-      <p>Let's Build Something Together</p>
-      <Hero>
-        <h1>Hi, i'm Abdullah<br></br>A <span>Front-End Web Developer.</span></h1>
-        <Para>I’m focused on building responsive front-end web applications while persuing S.Y.BCA.</Para>
-        <a href='https://www.linkedin.com/in/abdullah-jagrala-789234280/' target='_blank' rel='noreferrer'>
-          <Button type='button'><LinkedIn /></Button>
-        </a>
-        <a href='https://github.com/Abdullah8007' target='_blank' rel='noreferrer'>
-          <Button type='button'><GitHub /></Button>
-        </a>
-        <Link to="contact" spy={true} smooth={true} offset={0} duration={100}>
-          <Button type='button'><MailOutlineRounded /></Button>
-        </Link>
-        <a href='/Resume.pdf' target='_blank' rel='noreferrer'>
-          <Button type='button'><RecentActorsRounded /></Button>
-        </a>
-      </Hero>
-    </Container >
+    <section className='home-section' id='home'>
+      <Container className=' container-fluid'>
+        <p>Let's Build Something Together</p>
+        <Hero>
+          <h1>Hi, i'm <span>Abdullah</span><br></br>A Front-End Web Developer.</h1>
+          <Para>I’m focused on building responsive front-end web applications while persuing S.Y.BCA.</Para>
+          <a href='https://www.linkedin.com/in/abdullah-jagrala-789234280/' target='_blank' rel='noreferrer'>
+            <Button type='button'><LinkedIn /></Button>
+          </a>
+          <a href='https://github.com/Abdullah8007' target='_blank' rel='noreferrer'>
+            <Button type='button'><GitHub /></Button>
+          </a>
+          <Link to="contact" spy={true} smooth={true} offset={0} duration={100}>
+            <Button type='button'><MailOutlineRounded /></Button>
+          </Link>
+          <a href='/Resume.pdf' target='_blank' rel='noreferrer'>
+            <Button type='button'><RecentActorsRounded /></Button>
+          </a>
+        </Hero>
+      </Container >
+    </section>
   )
 };
 
@@ -40,6 +43,7 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: fade-up 2s;
 
   p {
     font-size: 18px;
@@ -80,18 +84,20 @@ const Hero = styled.div`
     }
 
     span {
-      color: transparent;
-      background-image: linear-gradient(#6A994E, #6A994E);
-      background-repeat: no-repeat;
-      -webkit-background-clip: text;
-      background-position: -775px 0;
-      animation: backcolor 4s linear infinite alternate;
+      // color: transparent;
+      // background-image: linear-gradient(#6A994E, #6A994E);
+      // background-repeat: no-repeat;
+      // -webkit-background-clip: text;
+      // background-position: -775px 0;
+      // animation: backcolor 4s linear infinite alternate;
 
-      @keyframes backcolor {
-        100% {
-          background-position: 0 0;
-        }
-      }
+      // @keyframes backcolor {
+      //   100% {
+      //     background-position: 0 0;
+      //   }
+      // }
+
+      color: #6A994E;
     }
   }
 `;
