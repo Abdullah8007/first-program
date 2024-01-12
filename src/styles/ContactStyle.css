@@ -44,21 +44,27 @@
     height: 800px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .contact-section .contact-left {
-        height: 1010px;
+        height: 1060px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .contact-section .contact-left {
-        height: 830px;
+        height: 880px;
     }
 }
 
 @media (max-width: 425px) {
     .contact-section .contact-left {
-        height: 750px;
+        height: 800px;
+    }
+}
+
+@media (max-width: 320px) {
+    .contact-section .contact-left {
+        height: 720px;
     }
 }
 
@@ -90,6 +96,12 @@
 
 .contact-section .down {
     padding-top: 30px;
+}
+
+@media(max-width: 1024px) {
+    .contact-section .down {
+        padding-top: 80px;
+    }
 }
 
 .contact-section .down .head {
