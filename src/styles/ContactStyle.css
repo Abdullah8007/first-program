@@ -145,6 +145,22 @@
     transform: scale(1.1, 1.1);
 }
 
+.contact-section .down a .menu-btn .linkedin {
+    color: #0270ad;
+}
+
+.contact-section .down a .menu-btn .github {
+    color: #000
+}
+
+.contact-section .down a .menu-btn .insta {
+    color: #da2f7e;
+}
+
+.contact-section .down a .menu-btn .actor {
+    color: #6A994E;
+}
+
 .contact-section .contact-right {
     background: #ECF0F3;
     box-shadow: 5px 10px 10px #B0B6C0;

@@ -49,16 +49,16 @@ function Contact() {
                   <h3 className='head'>CONNECT WITH ME</h3>
                   <div className='btn-group'>
                     <a href='https://www.linkedin.com/in/abdullah-jagrala-789234280/' target='_blank' rel='noreferrer'>
-                      <Button type='button' className='menu-btn'><LinkedIn /></Button>
+                      <Button type='button' className='menu-btn'><LinkedIn className='linkedin' /></Button>
                     </a>
                     <a href='https://github.com/Abdullah8007' target='_blank' rel='noreferrer'>
-                      <Button type='button' className='menu-btn'><GitHub /></Button>
+                      <Button type='button' className='menu-btn'><GitHub className='github' /></Button>
                     </a>
                     <a href='https://www.instagram.com/a_jagrala_007/' target='_blank' rel='noreferrer'>
-                      <Button type='button' className='menu-btn'><Instagram /></Button>
+                      <Button type='button' className='menu-btn'><Instagram className='insta' /></Button>
                     </a>
                     <a href='/Resume.pdf' target='_blank' rel='noreferrer'>
-                      <Button type='button' className='menu-btn'><RecentActorsRounded /></Button>
+                      <Button type='button' className='menu-btn'><RecentActorsRounded className='actor' /></Button>
                     </a>
                   </div>
                 </div>

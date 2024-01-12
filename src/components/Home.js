@@ -16,16 +16,16 @@ function Home() {
           <h1>Hi, i'm <span>Abdullah</span><br></br>A Front-End Web Developer.</h1>
           <Para>I’m focused on building responsive front-end web applications while persuing BCA.</Para>
           <a href='https://www.linkedin.com/in/abdullah-jagrala-789234280/' target='_blank' rel='noreferrer'>
-            <Button type='button'><LinkedIn /></Button>
+            <Button type='button'><LinkedIn className='linkedin' /></Button>
           </a>
           <a href='https://github.com/Abdullah8007' target='_blank' rel='noreferrer'>
-            <Button type='button'><GitHub /></Button>
+            <Button type='button'><GitHub className='github' /></Button>
           </a>
           <Link to="contact" spy={true} smooth={true} offset={0} duration={100}>
-            <Button type='button'><MailOutlineRounded /></Button>
+            <Button type='button'><MailOutlineRounded className='mail' /></Button>
           </Link>
           <a href='/Resume.pdf' target='_blank' rel='noreferrer'>
-            <Button type='button'><RecentActorsRounded /></Button>
+            <Button type='button'><RecentActorsRounded className='actor' /></Button>
           </a>
         </Hero>
       </Container >

@@ -49,3 +49,19 @@
         transform: translateY(0px);
     }
 }
+
+.home-section a .linkedin {
+    color: #0270ad;
+}
+
+.home-section a .github {
+    color: #000;
+}
+
+.home-section a .mail {
+    color: #f0ba01;
+}
+
+.home-section a .actor {
+    color: #6A994E;
+}
