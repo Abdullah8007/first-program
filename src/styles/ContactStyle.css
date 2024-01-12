@@ -50,6 +50,12 @@
     }
 }
 
+@media (max-width: 768px) {
+    .contact-section .contact-left {
+        height: 830px;
+    }
+}
+
 @media (max-width: 425px) {
     .contact-section .contact-left {
         height: 750px;
@@ -119,6 +125,19 @@
 @media (max-width: 425px) {
     .contact-section .down a .menu-btn {
         margin: 20px 12px;
+    }
+}
+
+@media (max-width: 375px) {
+    .contact-section .down a .menu-btn {
+        margin: 20px 8px;
+    }
+}
+
+@media (max-width: 320px) {
+    .contact-section .down a .menu-btn {
+        margin: 20px 1px;
+        overflow: hidden;
     }
 }
 
