@@ -45,7 +45,7 @@ function Projects() {
                         <img src='/Images/Travelling.png' alt='Travelling' className='img-fluid' />
                         <div className='layer'>
                             <h3>Travelling</h3>
-                            <h5>HTML CSS</h5>
+                            <h5>HTML CSS BOOTSTRAP</h5>
                             <div className='buttons'>
                                 <a href='https://github.com/Abdullah8007/Travelling' target='_blank' rel='noreferrer'><Button className='btn-main btn'>Code</Button></a>
                                 <a href='https://trip-tok.vercel.app' target='_blank' rel='noreferrer'><Button className='btn-main btn'>Demo</Button></a>
