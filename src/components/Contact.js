@@ -17,7 +17,7 @@ function Contact() {
 
   const userCollectionRef = collection(db, "contactdata")
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     addDoc(userCollectionRef, {
       Name: name,
       Number: number,
