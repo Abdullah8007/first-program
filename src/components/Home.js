@@ -24,7 +24,7 @@ function Home() {
           <Link to="contact" spy={true} smooth={true} offset={0} duration={100}>
             <Button type='button'><MailOutlineRounded className='mail' /></Button>
           </Link>
-          <a href='/Resume.pdf' target='_blank' rel='noreferrer'>
+          <a href='/Abdullah Jagrala CV.pdf' target='_blank' rel='noreferrer'>
             <Button type='button'><RecentActorsRounded className='actor' /></Button>
           </a>
         </Hero>

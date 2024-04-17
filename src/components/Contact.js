@@ -57,7 +57,7 @@ function Contact() {
                     <a href='https://www.instagram.com/a_jagrala_007/' target='_blank' rel='noreferrer'>
                       <Button type='button' className='menu-btn'><Instagram className='insta' /></Button>
                     </a>
-                    <a href='/Resume.pdf' target='_blank' rel='noreferrer'>
+                    <a href='/Abdullah Jagrala CV.pdf' target='_blank' rel='noreferrer'>
                       <Button type='button' className='menu-btn'><RecentActorsRounded className='actor' /></Button>
                     </a>
                   </div>
