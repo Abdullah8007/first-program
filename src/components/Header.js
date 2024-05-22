@@ -45,7 +45,7 @@ const Header = () => {
               <Nav.Link className='nav-menu'><Link to="skills" spy={true} smooth={true} offset={0} duration={100}>Skills</Link></Nav.Link>
               <Nav.Link className='nav-menu'><Link to="projects" spy={true} smooth={true} offset={0} duration={100}>Projects</Link></Nav.Link>
               <Nav.Link className='nav-menu'><Link to="contact" spy={true} smooth={true} offset={0} duration={100}>Contact</Link></Nav.Link>
-              <a href='/Resume.pdf' target='_blank' rel='noreferrer'><Button className='btn-main'>Resume</Button></a>
+              <a href='/Abdullah Jagrala CV.pdf' target='_blank' rel='noreferrer'><Button className='btn-main'>Resume</Button></a>
             </Nav>
           </Navbar.Collapse>
         </Container>
