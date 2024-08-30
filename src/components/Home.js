@@ -15,9 +15,9 @@ function Home() {
         <Hero>
           <h1>Hi, i'm <span>Abdullah</span><br></br>A Front-End Web Developer.</h1>
           <Para>I’m focused on building responsive front-end web applications while persuing BCA.</Para>
-          <a href='https://www.linkedin.com/in/abdullah-jagrala-789234280/' target='_blank' rel='noreferrer'>
+          {/* <a href='https://www.linkedin.com/in/abdullah-jagrala-789234280/' target='_blank' rel='noreferrer'>
             <Button type='button'><LinkedIn className='linkedin' /></Button>
-          </a>
+          </a> */}
           <a href='https://github.com/Abdullah8007' target='_blank' rel='noreferrer'>
             <Button type='button'><GitHub className='github' /></Button>
           </a>

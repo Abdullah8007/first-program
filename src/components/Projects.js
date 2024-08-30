@@ -24,31 +24,29 @@ function Projects() {
                         <img src='/Images/Eduford.png' alt='Eduford' className='img-fluid' />
                         <div className='layer'>
                             <h3>Eduford</h3>
-                            <h5>HTML CSS</h5>
+                            <h5>HTML5 CSS3 JS</h5>
                             <div className='buttons'>
                                 <a href='https://github.com/Abdullah8007/College-Project' target='_blank' rel='noreferrer'><Button className='btn-main'>Code</Button></a>
                             </div>
                         </div>
                     </Col>
                     <Col lg={6} md={6} className='mb-5 mb-lg-0 mt-4 overlay'>
-                        <img src='/Images/Zoo.png' alt='Zoo' className='img-fluid' />
+                        <img src='/Images/Chem-Proof Pumps.png' alt='Chem-Proof Pumps' className='img-fluid' />
                         <div className='layer'>
-                            <h3>Zoo</h3>
-                            <h5>HTML CSS JS</h5>
+                            <h3>Chem-Proof Pumps</h3>
+                            <h5>HTML5 CSS3 JS BOOTSTRAP5</h5>
                             <div className='buttons'>
-                                <a href='https://github.com/Abdullah8007/Zoo' target='_blank' rel='noreferrer'><Button className='btn-main'>Code</Button></a>
-                                <a href='https://zoo-jade.vercel.app' target='_blank' rel='noreferrer'><Button className='btn-main'>Demo</Button></a>
+                                <a href='https://chemproofpump.com' target='_blank' rel='noreferrer'><Button className='btn-main'>Demo</Button></a>
                             </div>
                         </div>
                     </Col>
                     <Col lg={6} md={6} className='mb-5 mb-lg-0 mt-4 overlay'>
-                        <img src='/Images/Travelling.png' alt='Travelling' className='img-fluid' />
+                        <img src='/Images/Balwa Car Cool.png' alt='Balwa Car Cool' className='img-fluid' />
                         <div className='layer'>
-                            <h3>Travelling</h3>
-                            <h5>HTML CSS BOOTSTRAP</h5>
+                            <h3>Balwa Car Cool</h3>
+                            <h5>HTML5 CSS3 JS BOOTSTRAP5</h5>
                             <div className='buttons'>
-                                <a href='https://github.com/Abdullah8007/Travelling' target='_blank' rel='noreferrer'><Button className='btn-main btn'>Code</Button></a>
-                                <a href='https://trip-tok.vercel.app' target='_blank' rel='noreferrer'><Button className='btn-main btn'>Demo</Button></a>
+                                <a href='https://balwacarcool.in' target='_blank' rel='noreferrer'><Button className='btn-main btn'>Demo</Button></a>
                             </div>
                         </div>
                     </Col>

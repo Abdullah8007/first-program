@@ -48,9 +48,9 @@ function Contact() {
                 <div className='down'>
                   <h3 className='head'>CONNECT WITH ME</h3>
                   <div className='btn-group'>
-                    <a href='https://www.linkedin.com/in/abdullah-jagrala-789234280/' target='_blank' rel='noreferrer'>
+                    {/* <a href='https://www.linkedin.com/in/abdullah-jagrala-789234280/' target='_blank' rel='noreferrer'>
                       <Button type='button' className='menu-btn'><LinkedIn className='linkedin' /></Button>
-                    </a>
+                    </a> */}
                     <a href='https://github.com/Abdullah8007' target='_blank' rel='noreferrer'>
                       <Button type='button' className='menu-btn'><GitHub className='github' /></Button>
                     </a>
