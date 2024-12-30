@@ -19,7 +19,7 @@ function About() {
               <p className='parah'>
                 Hi there!, I’m Abdullah, a curious frontend developer who’s trying to get a bit better every day.
                 <br></br><br></br>
-                I currently studying in S.Y.BCA from Tilak Maharashtra Vidyapeeth, Pune.
+                I currently studying in T.Y.BCA from Tilak Maharashtra Vidyapeeth, Pune.
                 <br></br><br></br>
                 I have always had a knack for technology and working with computers. Fascinated with how intricate programming can be I was quickly drawn to learn more. I started learning JavaScript and was even more enthused with making websites interactive.
                 <br></br><br></br>
