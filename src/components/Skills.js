@@ -31,7 +31,7 @@ function Skills() {
                         </Col>
                         <Col md={6} lg={4} className='mb-3 mb-lg-0 mt-3 columns'>
                             <div className='skill-menu'>
-                                <img src='/Images/Python.svg' alt='Skills-Img' className='img-fluid' />
+                                <img src='/Images/Python.svg' alt='Skills-Img' className='img-fluid w-25' />
                                 <h4>PYTHON</h4>
                             </div>
                         </Col>
