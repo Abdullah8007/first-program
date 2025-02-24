@@ -37,18 +37,6 @@ function Skills() {
                         </Col>
                         <Col md={6} lg={4} className='mb-3 mb-lg-0 mt-3 columns'>
                             <div className='skill-menu'>
-                                <img src='/Images/ReactJS.svg' alt='Skills-Img' className='img-fluid' />
-                                <h4>REACT</h4>
-                            </div>
-                        </Col>
-                        <Col md={6} lg={4} className='mb-3 mb-lg-0 mt-3 columns'>
-                            <div className='skill-menu'>
-                                <img src='/Images/react-bootstrap.png' alt='Skills-Img' className='img-fluid' />
-                                <h4>REACT BOOTSTRAP</h4>
-                            </div>
-                        </Col>
-                        <Col md={6} lg={4} className='mb-3 mb-lg-0 mt-3 columns'>
-                            <div className='skill-menu'>
                                 <img src='/Images/bootstrap.png' alt='Skills-Img' className='img-fluid' />
                                 <h4>BOOTSTRAP5</h4>
                             </div>
