@@ -37,6 +37,11 @@
     cursor: pointer;
 }
 
+.skill-section .icon-img {
+    height: 48px;
+    width: 48px;
+}
+
 @media (max-width: 767px) {
     .skill-section .skill-menu {
         margin: 20px 0;
