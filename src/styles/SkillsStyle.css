@@ -8,7 +8,7 @@
     text-align: left;
 }
 
-.skill-section .head {
+.skill-section .head, .s-header {
     font-size: 20px;
     text-transform: uppercase;
     color: #6A994E;
