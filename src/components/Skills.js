@@ -74,7 +74,7 @@ function Skills() {
                         </Col>
                         <Col md={6} lg={3} className='mb-3 mb-lg-0 mt-3 mt-lg-0 columns'>
                             <div className='skill-menu'>
-                                <img src='/Images/SqLITE.svg' alt='Skills-Img' className='img-fluid' />
+                                <img src='/Images/SqLite.svg' alt='Skills-Img' className='img-fluid' />
                                 <h4>SQLITE3</h4>
                             </div>
                         </Col>
