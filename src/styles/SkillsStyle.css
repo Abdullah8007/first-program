@@ -5,7 +5,7 @@
     justify-content: center;
     background-color: #ECF0F3;
     flex-direction: column;
-    text-align:left;
+    text-align: left;
 }
 
 .skill-section .head {
@@ -50,4 +50,14 @@
 
 .skill-section .skill-menu:hover {
     transform: scale(1.05, 1.05);
+}
+
+@media (max-width: 425px) {
+    .skill-section .s-header {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #6A994E;
+        letter-spacing: 1px;
+        text-align: center;
+    }
 }

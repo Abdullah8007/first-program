@@ -11,7 +11,7 @@ function Skills() {
                     <Row className='justify-content-start align-items-center'>
                         <h3 className='head'>Skills</h3>
                         <h1 className='title'>What I Can Do</h1>
-                        <h4 className='head mt-5'>Language</h4>
+                        <h4 className='s-header mt-4 mb-2'>Language</h4>
                         <Col md={6} lg={3} className='mb-3 mb-lg-0 mt-3 mt-lg-0 columns'>
                             <div className='skill-menu'>
                                 <img src='/Images/Python.svg' alt='Skills-Img' className='img-fluid' />
@@ -38,7 +38,7 @@ function Skills() {
                         </Col>
                     </Row>
                     <Row className='justify-content-start align-items-center'>
-                        <h4 className='head mt-3'>Framework, Platforms & Libraries</h4>
+                        <h4 className='s-header mt-3 mb-2'>Framework, Platforms & Libraries</h4>
                         <Col md={6} lg={3} className='mb-3 mb-lg-0 mt-3 mt-lg-0 columns'>
                             <div className='skill-menu'>
                                 <img src='/Images/Django.svg' alt='Skills-Img' className='img-fluid' />
@@ -65,7 +65,7 @@ function Skills() {
                         </Col>
                     </Row>
                     <Row className='justify-content-start align-items-center'>
-                        <h4 className='head mt-3'>Databases / ORM</h4>
+                        <h4 className='s-header mt-3 mb-2'>Databases / ORM</h4>
                         <Col md={6} lg={3} className='mb-3 mb-lg-0 mt-3 mt-lg-0 columns'>
                             <div className='skill-menu'>
                                 <img src='/Images/Postgres.svg' alt='Skills-Img' className='img-fluid' />
@@ -92,7 +92,7 @@ function Skills() {
                         </Col>
                     </Row>
                     <Row className='justify-content-start align-items-center'>
-                        <h4 className='head mt-3'>CI/CD VCS</h4>
+                        <h4 className='s-header mt-3 mb-2'>CI/CD VCS</h4>
                         <Col md={6} lg={3} className='mb-3 mb-lg-0 mt-3 mt-lg-0 columns'>
                             <div className='skill-menu'>
                                 <img src='/Images/Git.svg' alt='Skills-Img' className='img-fluid' />
@@ -107,7 +107,7 @@ function Skills() {
                         </Col>
                     </Row>
                     <Row className='justify-content-start align-items-center'>
-                        <h4 className='head mt-3'>Hosting/SaaS</h4>
+                        <h4 className='s-header mt-3 mb-2'>Hosting/SaaS</h4>
                         <Col md={6} lg={3} className='mb-3 mb-lg-0 mt-3 mt-lg-0 columns'>
                             <div className='skill-menu'>
                                 <img src='/Images/Firebase.svg' alt='Skills-Img' className='img-fluid' />
@@ -122,7 +122,7 @@ function Skills() {
                         </Col>
                     </Row>
                     <Row className='justify-content-start align-items-center'>
-                        <h4 className='head mt-3'>Design</h4>
+                        <h4 className='s-header mt-3 mb-2'>Design</h4>
                         <Col md={6} lg={3} className='mb-3 mb-lg-0 mt-3 mt-lg-0 columns'>
                             <div className='skill-menu'>
                                 <img src='/Images/Canva.svg' alt='Skills-Img' className='img-fluid' />
@@ -131,7 +131,7 @@ function Skills() {
                         </Col>
                     </Row>
                     <Row className='justify-content-start align-items-center'>
-                        <h4 className='head mt-3'>Others</h4>
+                        <h4 className='s-header mt-3 mb-2'>Others</h4>
                         <Col md={6} lg={3} className='mb-3 mb-lg-0 mt-3 mt-lg-0 columns'>
                             <div className='skill-menu'>
                                 <img src='/Images/Postman.svg' alt='Skills-Img' className='img-fluid icon-img' />
